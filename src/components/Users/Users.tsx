@@ -39,7 +39,7 @@ export const Users = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Активные</h1>
+      <h1 className={styles.title}>Активные</h1>
       <ul className={styles.block}>
         {users.map((user) => (
           <li key={user.id} className={styles.card}>
@@ -51,9 +51,9 @@ export const Users = () => {
               />
             </div>
             <div>
-              <h2>{user.username}</h2>
-              <p>{user.company.name}</p>
-              <p>{user.address.city}</p>
+              <h2 className={styles.userTitle}>{user.username}</h2>
+              <p className={styles.company}>{user.company.name}</p>
+              <p className={styles.city}>{user.address.city}</p>
             </div>
             <div>
               <CustomCardBtn id={user.id} />

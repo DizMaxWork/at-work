@@ -1,0 +1,43 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+  }
+  
+.popupContent {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    height: 211px;
+  }
+  .popupText{
+    color: #595959;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+  .closeBtn{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15px;
+    position: relative;
+  }
+  .closeBtn::after{
+    content: '';
+position: absolute;
+top: -70px;
+right: -140px;
+width: 10px;
+height: 10px;
+background-image: url("../../../public/close.svg");
+background-size: contain;
+  }
