@@ -1,0 +1,23 @@
+.block {
+  background: #fdfdfd;
+  padding: 40px;
+  border-radius: 16px;
+}
+.img {
+  border-radius: 8px;
+}
+.text_block {
+  margin-top: 40px;
+}
+.selectedTxt {
+  font-size: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dadada;
+}
+.unselectedTxt {
+  color: #9c9c9c;
+  font-size: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dadada;
+  margin-top: 24px;
+}
