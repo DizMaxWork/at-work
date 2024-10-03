@@ -15,6 +15,7 @@
   border-radius: 16px;
   background: #FDFDFD;
   margin: 16px 20px;
+  flex-wrap: wrap;
 }
 .img {
   width: 112px;
@@ -26,6 +27,8 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+
+
 .title{
   font-size: 24px;
   font-weight: 600;
@@ -46,4 +49,26 @@
 .city{
   color: #9C9C9C;
   font-size: 14px;
+}
+.text_block{
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 350px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .card{width: 165px;justify-content: center;margin: 10px 0px;}
+  .img{width: 130px; height: 120px;}
+  .userTitle{font-size: 18px;}
+  .company{font-size: 14px;padding-bottom: 12px;}
+  .city{font-size: 10px;}
 }

@@ -26,3 +26,18 @@
   background-color: #F4F4F4;
   color: #595959;
 }
+@media screen and (max-width: 1200px) {
+  .block{
+    width: 600px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .block{
+    padding: 40px 20px;
+    width: 350px;
+  }
+  .btn{
+    padding: 12px 0;
+    width: 100%;
+  }
+}

@@ -2,3 +2,6 @@
   background: #f4f4f4;
   height: 100vh;
 }
+@media screen and (max-width: 1200px) {
+  .bg{height:100%}
+}

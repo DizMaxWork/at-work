@@ -21,3 +21,9 @@
   border-bottom: 1px solid #dadada;
   margin-top: 24px;
 }
+@media screen and (max-width: 1200px) {
+  .block{width: 400px; margin-bottom: 30px;}
+}
+@media screen and (max-width: 800px) {
+  .block{width: 350px; margin-bottom: 30px; padding: 40px;}
+}
