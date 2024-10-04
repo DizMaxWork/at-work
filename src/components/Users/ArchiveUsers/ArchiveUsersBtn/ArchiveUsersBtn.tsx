@@ -49,21 +49,29 @@ export const ArchiveUsersBtn = ({
     setIsOpen(false);
   };
   return (
-    <div>
-      {isOpen && (
-        <div className={styles.dropdown}>
-          <div className={styles.dropdown_item} onClick={handleActive}>
-            Активировать
+    <>
+      <div>
+        {isOpen && (
+          <div className={styles.dropdown}>
+            <div className={styles.dropdown_item} onClick={handleActive}>
+              Активировать
+            </div>
           </div>
+        )}
+      </div>
+      {document.documentElement.clientWidth === 800 ? (
+        <div className={styles.dots} onClick={toggleDropdown}>
+          <div className={styles.dot}></div>
+          <div className={styles.dot}></div>
+          <div className={styles.dot}></div>
+        </div>
+      ) : (
+        <div className={styles.dots} onClick={toggleDropdown}>
+          <div className={styles.dot}></div>
+          <div className={styles.dot}></div>
+          <div className={styles.dot}></div>
         </div>
       )}
-      <button className={styles.btn} onClick={toggleDropdown}>
-        {document.documentElement.clientWidth === 800 ? (
-          <img src="/small-dots.svg" alt="Кнопки модификации" />
-        ) : (
-          <img src="/menu-dots.svg" alt="Кнопки модификации" />
-        )}
-      </button>
-    </div>
+    </>
   );
 };

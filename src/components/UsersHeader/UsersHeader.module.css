@@ -4,7 +4,7 @@
   justify-content: space-between;
 }
 .block {
-  width: 1200px;
+  width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@
 .userName {
   margin-left: 8px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .block{
     width: 800px;
     margin: 0 auto;

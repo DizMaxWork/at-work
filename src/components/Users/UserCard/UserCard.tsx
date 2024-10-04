@@ -24,9 +24,7 @@ export const UserCard = ({
   const [isOpenDropdown, setIsOpenDropdown] = useState(false);
   return (
     <>
-      <div>
-        <img src={imgSrc} alt="Фото пользователя" className={styles.img} />
-      </div>
+      <img src={imgSrc} alt="Фото пользователя" className={styles.img} />
 
       <div className={styles.text_block}>
         {!isOpenDropdown && (
@@ -36,7 +34,7 @@ export const UserCard = ({
                 imgSrc === "user.png" ? styles.userTitle : styles.archiveTitle
               }
             >
-              {name}
+              {username}
             </h2>
             <p className={styles.company}>{company}</p>
             <p className={styles.city}>{city}</p>

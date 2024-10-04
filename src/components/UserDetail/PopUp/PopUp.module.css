@@ -14,9 +14,14 @@
 .popupContent {
   background: white;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 16px;
   text-align: center;
   height: 211px;
+  width: 310px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
 }
 .popupText{
   color: #595959;
@@ -34,8 +39,8 @@
 .closeBtn::after{
   content: '';
   position: absolute;
-  top: -70px;
-  right: -140px;
+  top: -30px;
+  right: -120px;
   width: 10px;
   height: 10px;
   background-image: url("../../../public/close.svg");

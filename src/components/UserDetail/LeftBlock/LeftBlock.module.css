@@ -26,4 +26,7 @@
 }
 @media screen and (max-width: 800px) {
   .block{width: 350px; margin-bottom: 30px; padding: 40px;}
+  .img{width: 287px;height: 187px;}
+  .unselectedTxt {font-size: 14px;}
+  .selectedTxt {font-size: 14px;}
 }

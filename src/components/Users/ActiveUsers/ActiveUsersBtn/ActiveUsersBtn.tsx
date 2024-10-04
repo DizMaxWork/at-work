@@ -54,28 +54,36 @@ export const ActiveUserBtn = ({
     setIsOpen(false);
   };
   return (
-    <div>
-      {isOpen && (
-        <div className={styles.dropdown}>
-          <Link to={`/user/${id}`} className={styles.dropdown_item}>
-            Редактировать
-          </Link>
-          <div className={styles.dropdown_item} onClick={handleDelete}>
-            Удалить
+    <>
+      <div>
+        {isOpen && (
+          <div className={styles.dropdown}>
+            <Link to={`/user/${id}`} className={styles.dropdown_item}>
+              Редактировать
+            </Link>
+            <div className={styles.dropdown_item} onClick={handleArchive}>
+              Архивировать
+            </div>
+            <div className={styles.dropdown_item} onClick={handleDelete}>
+              Скрыть
+            </div>
           </div>
-          <div className={styles.dropdown_item} onClick={handleArchive}>
-            Архивировать
-          </div>
+        )}
+      </div>
+
+      {document.documentElement.clientWidth === 800 ? (
+        <div className={styles.dots} onClick={toggleDropdown}>
+          <div className={styles.dot}></div>
+          <div className={styles.dot}></div>
+          <div className={styles.dot}></div>
+        </div>
+      ) : (
+        <div className={styles.dots} onClick={toggleDropdown}>
+          <div className={styles.dot}></div>
+          <div className={styles.dot}></div>
+          <div className={styles.dot}></div>
         </div>
       )}
-
-      <button className={styles.btn} onClick={toggleDropdown}>
-        {document.documentElement.clientWidth === 800 ? (
-          <img src="small-dots.svg" alt="Кнопки модификации" />
-        ) : (
-          <img src="menu-dots.svg" alt="Кнопки модификации" />
-        )}
-      </button>
-    </div>
+    </>
   );
 };

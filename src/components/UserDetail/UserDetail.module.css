@@ -31,30 +31,30 @@
   padding-top: 20px;
 }
 @media screen and (max-width: 1200px) {
-  .container{
+  .container {
     width: 800px;
   }
-  .section{
+  .section {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 @media screen and (max-width: 800px) {
-  .container{
+  .container {
     width: 350px;
   }
-  .section{
+  .section {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .linkBlock{
+  .linkBlock {
     margin-left: 30px;
   }
-  .backLink::before{
+  .backLink::before {
     background-image: url("../../../public/adapt-arrow.svg");
     width: 6px;
-  height: 10px;
-  left: -25px;
-  bottom: 7px;
+    height: 10px;
+    left: -25px;
+    bottom: 7px;
   }
 }
