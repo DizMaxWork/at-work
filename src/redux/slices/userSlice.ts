@@ -28,6 +28,7 @@ const usersSlice = createSlice({
     },
     users: [],
     isOpen: false,
+    archiveUsers: [],
   },
   reducers: {
     setUser(state, action) {
@@ -39,8 +40,12 @@ const usersSlice = createSlice({
     setIsOpen(state, action) {
       state.isOpen = action.payload;
     },
+    setArchiveUsers(state, action) {
+      state.archiveUsers = action.payload;
+    },
   },
 });
 
-export const { setUser, setUsers, setIsOpen } = usersSlice.actions;
+export const { setUser, setUsers, setIsOpen, setArchiveUsers } =
+  usersSlice.actions;
 export default usersSlice.reducer;

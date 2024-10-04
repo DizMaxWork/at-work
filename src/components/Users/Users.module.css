@@ -52,6 +52,8 @@
 }
 .text_block{
   display: flex;
+  justify-content: space-between;
+  width: 180px;
 }
 @media screen and (max-width: 1200px) {
   .container {

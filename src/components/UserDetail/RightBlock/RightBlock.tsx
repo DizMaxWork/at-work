@@ -7,21 +7,9 @@ export const RightBlock = () => {
   const [isPopupVisible, setPopupVisible] = useState(false);
   const user = useSelector((state: IState) => state.user.user);
   const handleSave = (e) => {
-    // Здесь вы можете добавить логику сохранения
     e.preventDefault();
-    console.log(user);
-
-    if (
-      user.name === "" ||
-      user.username === "" ||
-      user.email === "" ||
-      user.city === "" ||
-      user.type === "" ||
-      user.phone === "" ||
-      user.company === ""
-    )
-      setPopupVisible(true);
-    else setPopupVisible(false);
+    setPopupVisible(true);
+    setTimeout(() => setPopupVisible(false), 5000);
   };
 
   return (
