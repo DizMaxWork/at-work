@@ -26,14 +26,14 @@ export const ActiveUserBtn = ({
   email: string;
   phone: string;
   company: string;
-  onToggleBlock: (prev) => void;
+  onToggleBlock: (prev: any) => void;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dispatch = useDispatch();
 
   const toggleDropdown = () => {
     setIsOpen((prev) => !prev);
-    onToggleBlock((prev) => !prev);
+    onToggleBlock((prev: any) => !prev);
     dispatch(setUser({ id, name, username, city, email, phone, company }));
   };
   const users = useSelector(
@@ -58,7 +58,7 @@ export const ActiveUserBtn = ({
       <div>
         {isOpen && (
           <div className={styles.dropdown}>
-            <Link to={`/user/${id}`} className={styles.dropdown_item}>
+            <Link to={`/at-work/user/${id}`} className={styles.dropdown_item}>
               Редактировать
             </Link>
             <div className={styles.dropdown_item} onClick={handleArchive}>

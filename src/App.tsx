@@ -11,8 +11,8 @@ function App() {
         <UsersHeader />
         <div className="bg">
           <Routes>
-            <Route path="/" element={<Users />} />
-            <Route path="/user/:userId" element={<UserDetail />} />
+            <Route path="/at-work" element={<Users />} />
+            <Route path="/at-work/user/:userId" element={<UserDetail />} />
           </Routes>
         </div>
       </Router>

@@ -8,7 +8,7 @@ export const PopUp = ({ setPopupVisible }: { setPopupVisible: any }) => {
     <div className={styles.popup}>
       <div className={styles.popupContent}>
         <button onClick={closePopup} className={styles.closeBtn} />
-        <img src="/Icon.svg" alt="Галочка" />
+        <img src="/at-work/Icon.svg" alt="Галочка" />
         <p className={styles.popupText}>Изменения сохранены!</p>
       </div>
     </div>

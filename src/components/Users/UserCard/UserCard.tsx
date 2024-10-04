@@ -31,7 +31,9 @@ export const UserCard = ({
           <div className={styles.text_content}>
             <h2
               className={
-                imgSrc === "user.png" ? styles.userTitle : styles.archiveTitle
+                imgSrc === "/at-work/user.png"
+                  ? styles.userTitle
+                  : styles.archiveTitle
               }
             >
               {username}
@@ -41,7 +43,7 @@ export const UserCard = ({
           </div>
         )}
 
-        {imgSrc === "user.png" ? (
+        {imgSrc === "/at-work/user.png" ? (
           <ActiveUserBtn
             id={id}
             username={username}

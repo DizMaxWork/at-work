@@ -25,7 +25,7 @@ export const ActiveUsers = () => {
         const data = await response.json();
         const slicedData = data.slice(0, 6);
         dispatch(setUsers(slicedData));
-      } catch (err) {
+      } catch (err: any) {
         setError(err.message);
       } finally {
         setLoading(false);
@@ -54,7 +54,7 @@ export const ActiveUsers = () => {
             email={user.email}
             phone={user.phone}
             company={user.company.name}
-            imgSrc="user.png"
+            imgSrc="/at-work/user.png"
           />
         </li>
       ))}

@@ -1,14 +1,11 @@
-.block {
-  background: #fdfdfd;
-  padding: 40px;
-}
+
 .section {
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
 }
 .container {
-  width: 1200px;
+  width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -30,7 +27,7 @@
 .linkBlock {
   padding-top: 20px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .container {
     width: 800px;
   }

@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 export const RightBlock = () => {
   const [isPopupVisible, setPopupVisible] = useState(false);
   const user = useSelector((state: IState) => state.user.user);
-  const handleSave = (e) => {
+  const handleSave = (e: any) => {
     e.preventDefault();
     if (
       !user.username ||

@@ -6,7 +6,7 @@ export const UserDetail = () => {
   return (
     <section className={styles.container}>
       <div className={styles.linkBlock}>
-        <Link to="/" className={styles.backLink}>
+        <Link to="/at-work" className={styles.backLink}>
           Назад
         </Link>
       </div>

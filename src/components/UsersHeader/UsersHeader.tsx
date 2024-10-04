@@ -4,16 +4,24 @@ export const UsersHeader = () => {
     <header className={styles.headerBG}>
       <div className={styles.block}>
         <div className={styles.leftBlock}>
-          <img src="/logo-sign.svg" alt="Логотип" />
+          <img src="/at-work/logo-sign.svg" alt="Логотип" />
           <span className={styles.title}>
             at-<strong>work</strong>
           </span>
         </div>
         <div className={styles.rightBlock}>
-          <img src="/heart.svg" alt="Лайк" className={styles.smallImg} />
-          <img src="/bell.svg" alt="Уведобления" className={styles.smallImg} />
+          <img
+            src="/at-work/heart.svg"
+            alt="Лайк"
+            className={styles.smallImg}
+          />
+          <img
+            src="/at-work/bell.svg"
+            alt="Уведобления"
+            className={styles.smallImg}
+          />
           <div className={styles.userBlock}>
-            <img src="/small-user.png" alt="Пользователь" />
+            <img src="/at-work/small-user.png" alt="Пользователь" />
             <span className={styles.userName}>Иванов Иван</span>
           </div>
         </div>

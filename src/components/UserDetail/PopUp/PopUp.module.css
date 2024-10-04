@@ -43,6 +43,6 @@
   right: -120px;
   width: 10px;
   height: 10px;
-  background-image: url("../../../public/close.svg");
+  background-image: url("/at-work/close.svg");
   background-size: contain;
 }

@@ -20,7 +20,7 @@ export const ArchiveUsers = () => {
               email={user.email}
               phone={user.phone}
               company={user.company.name}
-              imgSrc="archiveCard.png"
+              imgSrc="/at-work/archiveCard.png"
             />
           </li>
         ))}
