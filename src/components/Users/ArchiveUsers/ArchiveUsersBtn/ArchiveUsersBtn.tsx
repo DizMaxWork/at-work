@@ -16,6 +16,7 @@ export const ArchiveUsersBtn = ({
   email,
   phone,
   company,
+  onToggleBlock,
 }: {
   id: number;
   name: string;
@@ -24,12 +25,14 @@ export const ArchiveUsersBtn = ({
   email: string;
   phone: string;
   company: string;
+  onToggleBlock: (prev) => void;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dispatch = useDispatch();
 
   const toggleDropdown = () => {
     setIsOpen((prev: boolean) => !prev);
+    onToggleBlock((prev) => !prev);
     dispatch(setUser({ id, name, username, city, email, phone, company }));
   };
   const users = useSelector(

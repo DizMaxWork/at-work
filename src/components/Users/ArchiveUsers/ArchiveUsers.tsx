@@ -1,7 +1,6 @@
 import styles from "./ArchiveUsers.module.css";
 import { User } from "../users.types";
 import { useSelector } from "react-redux";
-import { ArchiveUsersBtn } from "./ArchiveUsersBtn/ArchiveUsersBtn";
 import { UserCard } from "../UserCard/UserCard";
 export const ArchiveUsers = () => {
   const archiveUsers = useSelector(
@@ -14,12 +13,6 @@ export const ArchiveUsers = () => {
         {archiveUsers.map((user: User) => (
           <li key={user.id} className={styles.card}>
             <UserCard
-              name={user.name}
-              city={user.address.city}
-              company={user.company.name}
-              imgSrc="archiveCard.png"
-            />
-            <ArchiveUsersBtn
               id={user.id}
               username={user.username}
               name={user.company.name}
@@ -27,6 +20,7 @@ export const ArchiveUsers = () => {
               email={user.email}
               phone={user.phone}
               company={user.company.name}
+              imgSrc="archiveCard.png"
             />
           </li>
         ))}

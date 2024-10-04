@@ -29,6 +29,7 @@ export const FormItem = ({
   const dispatch = useDispatch();
   const user = useSelector((state: IState) => state.user.user);
   const [inputValue, setInputValue] = useState(value);
+  const [isFocused, setIsFocused] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = e.target.value;
@@ -40,6 +41,9 @@ export const FormItem = ({
       })
     );
   };
+  const handleClear = () => {
+    setInputValue("");
+  };
   return (
     <div className={styles.block}>
       <h3 className={styles.info}>{info}</h3>
@@ -49,7 +53,14 @@ export const FormItem = ({
         value={inputValue}
         onChange={handleChange}
         className={styles.input}
+        onFocus={() => setIsFocused(true)}
+        onBlur={() => setIsFocused(false)}
       />
+      {isFocused && inputValue && (
+        <span className={styles.clear_icon}>
+          <img src="/clear.svg" alt="Очистить" onClick={handleClear} />
+        </span>
+      )}
     </div>
   );
 };

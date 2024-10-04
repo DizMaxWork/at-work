@@ -9,7 +9,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { User } from "../../users.types";
 
-export const CustomCardBtn = ({
+export const ActiveUserBtn = ({
   id,
   name,
   username,
@@ -17,6 +17,7 @@ export const CustomCardBtn = ({
   email,
   phone,
   company,
+  onToggleBlock,
 }: {
   id: number;
   name: string;
@@ -25,12 +26,14 @@ export const CustomCardBtn = ({
   email: string;
   phone: string;
   company: string;
+  onToggleBlock: (prev) => void;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dispatch = useDispatch();
 
   const toggleDropdown = () => {
     setIsOpen((prev) => !prev);
+    onToggleBlock((prev) => !prev);
     dispatch(setUser({ id, name, username, city, email, phone, company }));
   };
   const users = useSelector(
@@ -65,6 +68,7 @@ export const CustomCardBtn = ({
           </div>
         </div>
       )}
+
       <button className={styles.btn} onClick={toggleDropdown}>
         {document.documentElement.clientWidth === 800 ? (
           <img src="small-dots.svg" alt="Кнопки модификации" />
