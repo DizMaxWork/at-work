@@ -1,76 +1,29 @@
+.title{
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 40px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dadada;
+}
 .block {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 28px;
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-bottom: -16px;
-  }
-  .card {
-    display: flex;
-    justify-content: space-between;
-    width: 360px;
-    padding: 24px;
-    border-radius: 16px;
-    background: #FDFDFD;
-    margin: 16px 20px;
-    flex-wrap: wrap;
-  }
-  .img {
-    width: 112px;
-    height: 120px;
-    border-radius: 8px;
-  }
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  
-  
-  .title{
-    font-size: 24px;
-    font-weight: 600;
-    padding-top: 40px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #dadada;
-  }
-  .userTitle{
-    font-size: 20px;
-    font-weight: 600;
-    color: #22A0BC;
-    padding-bottom: 4px;
-  }
-  .company{
-    color:#595959;
-    padding-bottom: 48px;
-  }
-  .city{
-    color: #9C9C9C;
-    font-size: 14px;
-  }
-  .text_block{
-    display: flex;
-    justify-content: space-between;
-    width: 180px;
-  }
-  @media screen and (max-width: 1200px) {
-    .container {
-      width: 800px;
-      margin: 0 auto;
-      padding: 0 15px;
-    }
-  }
-  @media screen and (max-width: 800px) {
-    .container {
-      width: 350px;
-      margin: 0 auto;
-      padding: 0 15px;
-    }
-    .card{width: 165px;justify-content: center;margin: 10px 0px;}
-    .img{width: 130px; height: 120px;}
-    .userTitle{font-size: 18px;}
-    .company{font-size: 14px;padding-bottom: 12px;}
-    .city{font-size: 10px;}
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -16px;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #FDFDFD;
+  margin: 16px 20px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 800px) {
+  .card{width: 165px;justify-content: center;margin: 10px 0px;}
+}

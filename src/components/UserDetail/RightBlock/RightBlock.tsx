@@ -8,7 +8,16 @@ export const RightBlock = () => {
   const user = useSelector((state: IState) => state.user.user);
   const handleSave = (e) => {
     e.preventDefault();
-    setPopupVisible(true);
+    if (
+      !user.username ||
+      !user.name ||
+      !user.email ||
+      !user.city ||
+      !user.phone ||
+      !user.company
+    ) {
+      setPopupVisible(false);
+    } else setPopupVisible(true);
     setTimeout(() => setPopupVisible(false), 5000);
   };
 

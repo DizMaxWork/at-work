@@ -6,7 +6,7 @@ export const UsersHeader = () => {
         <div className={styles.leftBlock}>
           <img src="/logo-sign.svg" alt="Логотип" />
           <span className={styles.title}>
-            at-<strong className={styles.titleStrong}>work</strong>
+            at-<strong>work</strong>
           </span>
         </div>
         <div className={styles.rightBlock}>

@@ -1,0 +1,43 @@
+.title{
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 40px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dadada;
+  }
+  .img {
+    width: 112px;
+    height: 120px;
+    border-radius: 8px;
+  }
+  .userTitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: #22A0BC;
+    padding-bottom: 4px;
+  }
+  .archiveTitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: #595959;
+    padding-bottom: 4px;
+  }
+  .company{
+    color:#595959;
+    padding-bottom: 48px;
+  }
+  .city{
+    color: #9C9C9C;
+    font-size: 14px;
+  }
+  .text_block{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+  }
+  @media screen and (max-width: 800px) {
+    .img{width: 130px; height: 120px;}
+    .userTitle{font-size: 18px;}
+    .company{font-size: 14px;padding-bottom: 12px;}
+    .city{font-size: 10px;}
+  }
